@@ -1,0 +1,122 @@
+<resources>
+    <string name="app_name">F.A.Q</string>
+
+    <string name="str_next">Next Question</string>
+    <string name="activity_settings">Settings</string>
+    <string name="title_activity_result">ResultActivity</string>
+    <string name="exit">Exit</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="your_score">Your Score Here</string>
+    <string name="quote">Quote Here</string>
+    <string name="restart">Restart</string>
+    <string name="option">Getting Started</string>
+    <string name="omkar">Omkar Shinde(Myself)</string>
+    <string name="two">Shubham Shevtekar</string>
+    <string name="three">Sushant Patil</string>
+    <string name="four">Pratik Angre</string>
+    <string name="five">Onkar Kulkarni</string>
+    <string name="six">$p!ker</string>
+    <string name="myfb">My Facebook Profile</string>
+    <string name="myfb2">I will be always there for u friend.</string>
+    <string name="myxda">My xda Profile</string>
+    <string name="myxda2">Click here to visit my xda account</string>
+    <string name="myinsta">My Instagram Account</string>
+    <string name="myinsta2">Share your pic ;-) </string>
+    <string name="mywa">My Whatsapp Account</string>
+    <string name="mywa2">Need any Help ,Drop me a Message.</string>
+    <string name="dialog_fire_missiles">Welcome Omkar to your first Dialog</string>
+    <string name="testcode">Test Code</string>
+    <string name="cancel">Cancel</string>
+    <string name="donate">Donate to Support me</string>
+    <string name="donate2">It helps a lot</string>
+    <string name="help">Help!</string>
+    <string name="about">About the Devloper (Omkar Shinde)</string>
+    <string name="help2">If u need Help.</string>
+    <string name="sourcecode">Test Code</string>
+    <string-array name="array_value">
+        <item>Instagram: omkarshinde7</item>
+        <item>Facebook: Omkar Shinde</item>
+        <item>Whatsapp: +917276899986</item>
+        <item>Hike: +917276899986</item>
+    </string-array>
+
+
+    <string name="str">Click Here</string>
+    <string name="version">1.2.0</string>
+    <string name="jadoo">Jaadoo</string>
+    <string name="fb">Friends!!</string>
+    <string name="log_in">Log In</string>
+    <string name="one">Ankit Mode</string>
+    <string name="create">Dont have account Sign up now?</string>
+
+    <string-array name="array_value6">
+        <item>Instagram: This is a Secret</item>
+        <item>Facebook: This is a Secret</item>
+        <item>Whatsapp: This is a Secret</item>
+        <item>Hike: This is a Secret</item>
+    </string-array>
+
+    <string-array name="array_value2">
+        <item>Instagram: shubhamks14</item>
+        <item>Facebook: Shubham Shevtekar</item>
+        <item>Whatsapp: +918857871419</item>
+    </string-array>
+
+    <string-array name="array_value3">
+        <item>Instagram: sushantpatilv </item>
+        <item>Facebook: Shushant Patil</item>
+        <item>Whatsapp: +917588388444 </item>
+        <item>Hike: +917588388444</item>
+    </string-array>
+
+    <string-array name="array_value4">
+        <item>Instagram: pratikangre</item>
+        <item>Facebook: Pratik Angre</item>
+        <item>Whatsapp: +918551030492</item>
+        <item>Hike: +918551030492</item>
+    </string-array>
+
+    <string-array name="array_value5">
+
+        <item>Facebook: Onkar Kulkarni</item>
+        <item>Whatsapp: +917058748974</item>
+        <item>Hike: +917058748974</item>
+    </string-array>
+    <string-array name="array_value1">
+
+        <item>Facebook: Ankit Mode</item>
+        <item>Whatsapp: +919420101404</item>
+        <item>Hike: +919420101404</item>
+    </string-array>
+
+
+
+    <string name="pref_send_report">Send crash reports</string>
+    <string name="pref_send_report_summary">Helps to fix bugs</string>
+    <string name="pref_sync_frequency">Sync frequency</string>
+    <string name="pref_sync_frequency_summary">Set the sync frequency</string>
+    <string name="pref_user_name">Set username</string>
+    <string name="pref_user_name_summary">Set your username</string>
+
+    <string name="pref_user_profile">User Profile</string>
+    <string name="pref_update_setting">Update Settings</string>
+    <string name="pref_pass">Set Default Password</string>
+    <string name="pref_pass1">Use this option on your own risk.</string>
+    <string name="title_activity_main">F.A.Q</string>
+    <string name="action_settings">Settings</string>
+    <string name="FDS">F D S</string>
+    <string name="home">Home</string>
+    <string name="deldquiz">D E L D</string>
+    <string name="coquiz">C O</string>
+    <string name="title_activity_splash">F.A.Q</string>
+    <string name="credits">Credits</string>
+    <string name="title_activity_deld">DELD F.A.Q</string>
+    <string name="title_activity_co">CO F.A.Q</string>
+    <string name="title_activity_deld_result">DeldResultActivity</string>
+    <string name="title_activity_co_result">CoResultActivity</string>
+    <string name="share_using">Share using</string>
+    <string name="title_activity_main2">F.A.Q</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+</resources>

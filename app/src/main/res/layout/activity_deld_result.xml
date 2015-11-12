@@ -1,0 +1,126 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CoResultActivity" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:orientation="vertical"
+        android:background="@drawable/hulk"
+        android:weightSum="1">
+
+        <RatingBar
+            android:id="@+id/ratingBar1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="1.0"
+            android:rating="0.0"
+            android:layout_marginTop="100dp"
+            android:layout_marginLeft="65dp" />
+
+        <TextView
+            android:id="@+id/textResult"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text="@string/your_score"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:layout_marginTop="40dp"
+            android:textColor="#ffb54a"
+            android:gravity="center"
+            android:layout_below="@+id/ratingBar1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="@string/quote"
+            android:id="@+id/textView"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#fabdccff"
+            android:textAlignment="center"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/btnres"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:drawable/ic_media_play"
+            android:layout_weight="0.10"
+            android:layout_centerHorizontal="true"
+            android:layout_alignBottom="@+id/btnhome"
+            android:layout_alignTop="@+id/btnhome" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Home"
+            android:id="@+id/textView2"
+            android:layout_gravity="center_horizontal"
+            android:textColor="#ffa9fa"
+            android:textSize="20dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignRight="@+id/btnhome"
+            android:layout_alignEnd="@+id/btnhome"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginBottom="30dp" />
+
+        <Button
+            android:layout_width="73dp"
+            android:layout_height="64dp"
+            android:id="@+id/btnhome"
+            android:layout_gravity=""
+            android:background="@drawable/home"
+            android:gravity="top|left"
+            android:layout_above="@+id/textView2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="15dp" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="75dp"
+            android:layout_height="65dp"
+            android:id="@+id/sharebtn"
+            android:layout_alignBottom="@+id/btnres"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/share"
+            android:layout_marginRight="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Restart"
+            android:id="@+id/textView3"
+            android:layout_below="@+id/sharebtn"
+            android:layout_centerHorizontal="true"
+            android:textColor="#3ab54d"
+            android:textSize="20dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:text="Share Score"
+            android:id="@+id/textView4"
+            android:textColor="#44a0cb"
+            android:textSize="20dp"
+            android:layout_below="@+id/btnres"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

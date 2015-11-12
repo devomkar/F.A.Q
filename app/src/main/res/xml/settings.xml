@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android" >
+
+    <PreferenceCategory android:title="@string/pref_user_profile" >
+        <EditTextPreference
+            android:title="@string/pref_user_name"
+            android:summary="@string/pref_user_name_summary"
+            android:key="prefUsername"/>
+        <EditTextPreference
+            android:title="@string/pref_pass"
+            android:summary="@string/pref_pass1"
+            android:key="prefpassword"
+            />
+        <CheckBoxPreference
+            android:title="Use Light Theme"
+            android:summary="Use White simple theme"
+            android:key="light_theme"
+            />
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/pref_update_setting" >
+        <CheckBoxPreference
+            android:defaultValue="false"
+            android:key="prefSendReport"
+            android:summary="@string/pref_send_report_summary"
+            android:title="@string/pref_send_report" >
+        </CheckBoxPreference>
+
+        <Preference
+            android:title="Check for Updates"
+            android:summary="Check if new Version is Available"
+            android:key="check_update"/>
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/about">
+        <Preference
+            android:title="@string/myfb"
+            android:summary="@string/myfb2"
+            android:key="myfb"
+            android:icon="@drawable/myfb"
+            />
+        <Preference
+            android:title="@string/myxda"
+            android:summary="@string/myxda2"
+            android:key="myxda"
+            android:icon="@drawable/myxda"
+            />
+        <Preference
+            android:title="@string/myinsta"
+            android:summary="@string/myinsta2"
+            android:key="myinsta"
+            android:icon="@drawable/myinsta"
+            />
+        <Preference
+            android:title="@string/mywa"
+            android:summary="@string/mywa2"
+            android:key="mywa"
+            android:icon="@drawable/mywa"
+            />
+
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/testcode">
+        <Preference
+            android:title="@string/help"
+            android:summary="@string/help2"
+            android:key="help"
+            android:icon="@drawable/help"
+            />
+        <Preference
+            android:title="@string/donate"
+            android:summary="@string/donate2"
+            android:key="donate"
+            android:icon="@drawable/donate"
+            />
+
+    </PreferenceCategory>
+</PreferenceScreen>

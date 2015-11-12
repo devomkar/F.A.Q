@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:title="F.A.Q">
+        <menu>
+            <item android:id="@+id/about" android:icon="@android:drawable/ic_menu_send"
+                android:title="About App" android:onClick="about"
+                />
+            <item android:id="@+id/nav_share" android:icon="@android:drawable/ic_menu_share"
+                android:title="Share" />
+
+            <item android:id="@+id/action_settings" android:title="@string/activity_settings"
+                android:icon="@android:drawable/ic_menu_manage" app:showAsAction="always" />
+        </menu>
+    </item>
+    <item android:id="@+id/credits" app:showAsAction="collapseActionView"
+        android:title="@string/credits" android:icon="@drawable/credits">
+        <!-- "file" submenu -->
+        <menu>
+            <item android:id="@+id/create_new"
+                android:title="@string/omkar" android:onClick="Credits" />
+            <item android:id="@+id/open"
+                android:title="@string/one" android:onClick="Credits1" />
+            <item android:id="@+id/open2"
+                android:title="@string/three" android:onClick="Credits3"/>
+
+        </menu>
+    </item>
+
+</menu>
