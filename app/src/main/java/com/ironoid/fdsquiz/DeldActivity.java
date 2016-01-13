@@ -10,6 +10,7 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
@@ -59,11 +60,18 @@ public class DeldActivity extends AppCompatActivity {
 
 
                 if (currentQ.getANSWER().equals(answer.getText())) {
-                    Toast.makeText(DeldActivity.this, "Awesome Right Answer.;-)", Toast.LENGTH_SHORT).show();
+                    Snackbar snackbar = Snackbar
+                            .make(v , "Awesome Right Answer", Snackbar.LENGTH_LONG);
+                    snackbar.show();
                     score++;
-                    Log.d("score", "Your score" + score);
-                } else {
-                    Toast.makeText(DeldActivity.this, "Wrong Answer.The Right Answer is " + currentQ.getANSWER(), Toast.LENGTH_SHORT).show();
+                    Log.d("score", "Your score"+score);
+                }
+                else
+                {
+                    Snackbar snackbar = Snackbar
+                            .make(v , "Wrong...The Right Answer is " + currentQ.getANSWER(), Snackbar.LENGTH_LONG);
+                    snackbar.show();
+
                 }
 
 
@@ -135,11 +143,13 @@ public class DeldActivity extends AppCompatActivity {
                 startActivity(home);
                 break;
             case R.id.share:
-                String shareBody = "Hey , have a look at this wonderfull app F.A.Q.\nYou can Revise Your MCQ's and " +
-                        "Frequently Asked Questions asked in Online Exam and Viva Using your Phone.\nJust Download the App From Here www.FAQ.com";
+                String shareBody = "Hey , have a look at this wonderfull app Experiment.\nYou can Revise Your MCQ's and " +
+                        "Frequently Asked Questions asked in Online Exam and Theory Exam Using your Phone." +
+                        "\nYou can also see old Question Papers of Previous Years." +
+                        "\nJust Download the App From Here www.ironoid.blogspot.in";
                 Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
                 sharingIntent.setType("text/plain");
-                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "FAQ App:");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "F.A.Q App:");
                 sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBody);
                 startActivity(Intent.createChooser(sharingIntent, getResources().getString(R.string.share_using)));
                 break;
@@ -201,6 +211,10 @@ public class DeldActivity extends AppCompatActivity {
 
     }
 
+public void snack(View view)
+{
+    Snackbar.make(view,"Awesome Right Answer",Snackbar.LENGTH_LONG).show();
+}
 
 
 }

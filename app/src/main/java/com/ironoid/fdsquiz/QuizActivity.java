@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarActivity;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
@@ -18,6 +19,7 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
+import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -55,13 +57,18 @@ public class QuizActivity extends AppCompatActivity {
                 Log.d("yourans", currentQ.getANSWER() + " " + answer.getText());
                 if(currentQ.getANSWER().equals(answer.getText()))
                 {
-                    Toast.makeText(QuizActivity.this, "Awesome Right Answer.;-)", Toast.LENGTH_SHORT).show();
+                    Snackbar snackbar = Snackbar
+                            .make(v , "Awesome Right Answer", Snackbar.LENGTH_LONG);
+                    snackbar.show();
                     score++;
                     Log.d("score", "Your score"+score);
                 }
                 else
                 {
-                    Toast.makeText(QuizActivity.this, "Wrong Answer.The Right Answer is " +currentQ.getANSWER(), Toast.LENGTH_SHORT).show();
+                    Snackbar snackbar = Snackbar
+                            .make(v , "Wrong...The Right Answer is " + currentQ.getANSWER(), Snackbar.LENGTH_LONG);
+                    snackbar.show();
+
                 }
 
                 if(qid<42){

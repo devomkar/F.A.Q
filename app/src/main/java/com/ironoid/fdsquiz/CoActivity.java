@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.ActionBarActivity;
 import android.util.Log;
 import android.view.Menu;
@@ -47,12 +48,20 @@ public class CoActivity extends ActionBarActivity {
                 RadioButton answer=(RadioButton)findViewById(grp.getCheckedRadioButtonId());
                 Log.d("yourans", currentQ.getANSWER()+" "+answer.getText());
                 if(currentQ.getANSWER().equals(answer.getText()))
-                {
-                    Toast.makeText(CoActivity.this, "Awesome Right Answer.;-)", Toast.LENGTH_SHORT).show();
-                    score++;
-                    Log.d("score", "Your score"+score);
-                }else { Toast.makeText(CoActivity.this, "Wrong Answer.The Right Answer is " +currentQ.getANSWER(), Toast.LENGTH_SHORT).show();}
-                if(qid<6){
+                {     Snackbar snackbar = Snackbar
+                            .make(v , "Awesome Right Answer", Snackbar.LENGTH_LONG);
+                snackbar.show();
+                score++;
+                Log.d("score", "Your score"+score);
+            }
+            else
+            {
+                Snackbar snackbar = Snackbar
+                        .make(v , "Wrong...The Right Answer is " + currentQ.getANSWER(), Snackbar.LENGTH_LONG);
+                snackbar.show();
+
+            }
+            if(qid<6){
 
                     currentQ=quesList.get(qid);
                     setQuestionView();

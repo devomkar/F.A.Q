@@ -29,7 +29,7 @@
         <Preference
             android:title="Check for Updates"
             android:summary="Check if new Version is Available"
-            android:key="check_update"/>
+            android:key="update"/>
 
     </PreferenceCategory>
 
@@ -73,6 +73,19 @@
             android:summary="@string/donate2"
             android:key="donate"
             android:icon="@drawable/donate"
+            />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="About App">
+        <Preference
+            android:title="Version"
+            android:summary="Version 1.001"
+            android:key="version"
+            />
+        <Preference
+            android:title="Release Date"
+            android:summary="19th December 2015"
+            android:key="donate"
             />
 
     </PreferenceCategory>

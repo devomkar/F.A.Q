@@ -1,6 +1,8 @@
 package com.ironoid.fdsquiz;
 
 
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.net.Uri;
 import android.os.Bundle;
 import android.preference.Preference;
@@ -9,6 +11,7 @@ import android.preference.PreferenceActivity;
 import android.app.Activity;
 import android.app.Notification.Action;
 import android.content.Intent;
+import android.support.design.widget.Snackbar;
 import android.view.Menu;
 import android.widget.Toast;
 
@@ -28,8 +31,35 @@ public class SettingsActivity extends PreferenceActivity {
         Preference myinsta =findPreference("myinsta");
         Preference myxda =findPreference("myxda");
         Preference mywa =findPreference("mywa");
+        Preference update =findPreference("update");
 
+        update.setOnPreferenceClickListener(new OnPreferenceClickListener() {
+            @Override
+            public boolean onPreferenceClick(Preference arg0) {
 
+                   AlertDialog.Builder close = new AlertDialog.Builder(SettingsActivity.this);
+
+                   close.setTitle("UPDATE");
+                   close.setMessage("Check if Update available ?");
+                   close.setPositiveButton("Yes", new
+                           DialogInterface.OnClickListener() {
+                               public void onClick(DialogInterface dialog, int which) {
+                                   Uri uri = Uri.parse("https://www.ironoid.blogspot.in/?m=1");
+                                   Intent intent = new Intent(Intent.ACTION_VIEW, uri);
+                                   startActivity(intent);
+                               }
+                           });;
+                   close.setNegativeButton("No",new
+                           DialogInterface.OnClickListener() {
+                               public void onClick(DialogInterface dialog, int which) {
+                               }
+                           });;
+                   AlertDialog alertDialog = close.create();
+                   alertDialog.show();
+
+                return false;
+            }
+        });
         help.setOnPreferenceClickListener(new OnPreferenceClickListener() {
 
             @Override
